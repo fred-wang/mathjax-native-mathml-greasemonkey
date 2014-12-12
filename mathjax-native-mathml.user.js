@@ -6,6 +6,7 @@
 // ==UserScript==
 // @name MathJax Native MathML
 // @namespace https://github.com/fred-wang/mathjax-native-mathml-greasemonkey
+// @license Mozilla Public License 2.0, http://mozilla.org/MPL/2.0/
 // @description Force MathJax to use the native MathML output.
 // @version 1.0
 // @icon https://addons.cdn.mozilla.net/user-media/addon_icons/481/481392-64.png
