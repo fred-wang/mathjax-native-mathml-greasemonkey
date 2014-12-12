@@ -3,6 +3,14 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
 * License, v. 2.0. If a copy of the MPL was not distributed with this
 * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+// ==UserScript==
+// @name MathJax Native MathML
+// @namespace https://github.com/fred-wang/mathjax-native-mathml-greasemonkey
+// @description Force MathJax to use the native MathML output.
+// @version 1.0
+// @icon https://addons.cdn.mozilla.net/user-media/addon_icons/481/481392-64.png
+// @run-at document-start
+// ==/UserScript==
 
 /* Create a mjx.menu cookie for this document and indicate that the NativeMML
    output mode is selected. */
