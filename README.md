@@ -1,8 +1,8 @@
 MathJax Native MathML (GreaseMonkey)
 ------------------------------------
 
-The GreaseMonkey script in this repository forces MathJax to use the native
-MathML mode. It is installable from
+The GreaseMonkey script in this repository forces MathJax/KaTeX to use the
+native MathML. It is installable from
 [OpenUserJS](https://openuserjs.org/scripts/fred.wang/MathJax_Native_MathML).
 
 This script is also available as a
