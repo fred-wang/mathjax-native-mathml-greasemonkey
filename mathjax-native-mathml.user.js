@@ -7,7 +7,7 @@
 // @name MathJax Native MathML
 // @namespace https://github.com/fred-wang/mathjax-native-mathml-greasemonkey
 // @license Mozilla Public License 2.0, http://mozilla.org/MPL/2.0/
-// @description Force MathJax and KaTeX to use the native MathML output.
+// @description Force MathJax/KaTeX/MediaWiki to use the native MathML output.
 // @version 1.1
 // @icon https://addons.cdn.mozilla.net/user-media/addon_icons/481/481392-64.png
 // @run-at document-start
@@ -29,3 +29,6 @@ window.addEventListener("load", listener, false);
 
 /* Add some CSS rules to force KaTeX to show its MathML output */
 GM_addStyle(".katex { display: inline !important; font-style: inherit !important; font-variant: inherit !important; font-weight: inherit !important; font-stretch: inherit !important; font-size: inherit !important; line-height: inherit !important; font-family: inherit !important; white-space: normal !important; } .katex .katex-mathml { position: static !important; clip: auto !important; height: auto !important; width: auto !important; overflow: visible !important; } .katex .katex-html { display: none !important; }");
+
+/* Reset some CSS properties set by MediaWiki and hide the image fallback */
+GM_addStyle(".mwe-math-mathml-a11y { clip: auto !important; overflow: visible !important; position: static !important; width: auto !important; height: auto !important; opacity: 1 !important; } .mwe-math-mathml-inline + .mwe-math-fallback-image-inline, .mwe-math-mathml-display + .mwe-math-fallback-image-display { display: none !important; }");
